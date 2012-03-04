@@ -7,12 +7,13 @@ A custom 'ratingchange' event is fired whenever the select is updated.
 
 ## Plugin Options
 <pre>
+// Default options
 $('#rating-widget').rating({
 	containerClasses: '',	// optional classes to append to the container
-	resetBtnOpts: 'left',	// false hides the button, 'left' or 'right' sets the position of the button
-	resetVal:		 '',			// default select option value (usually '' - an empty string)
-	resetTitle:	 'Reset', // title of the reset button
-	initialRating: 0			 // initial value of the rating (not yet implemented)
+	resetBtnOpts:	'left',	// false hides the button, 'left' or 'right' sets the position of the button
+	resetVal:		'',		// default select option value (usually '' - an empty string)
+	resetTitle:		'Reset',// title of the reset button
+	initialRating:	0		// initial value of the rating (not yet implemented)
 });
 </pre>
 
@@ -37,6 +38,17 @@ $('#rating-widget-container-classes').rating({containerClasses: 'my-star-widget'
 // custom handling of the ratingchange event
 $(document).on('ratingchange', function(e) {
 	console.log('ratingchanged', e.target);
+});
+</pre>
+
+<pre>
+// Change all the default options
+$('#rating-widget').rating({
+	containerClasses: 'my-theme',	// add 'my-theme' to the rating container
+	resetBtnOpts:	false,			// hide the button, 'left' or 'right' sets the position of the button
+	resetVal:		'myvalue',		// default select option value (usually '' - an empty string)
+	resetTitle:		'Reset to Zero',// title of the reset button
+	initialRating:	3				// set the initial value to 3 (not yet implemented)
 });
 </pre>
 
