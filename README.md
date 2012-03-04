@@ -57,6 +57,7 @@ $('#rating-widget').rating({
 
 * Add initial images sprite
 * Then add a few "themes" - css and image sprites
+* Add a usage section, include jQuery dependancy and simple ordering of script tags
 * Improve documentation
 * Set initial rating - abstract a set_rating function from rating_clicked()
 * Integrate with simple tooltip plugin once it's finished
