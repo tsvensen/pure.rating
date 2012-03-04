@@ -55,13 +55,12 @@ $('#rating-widget').rating({
 
 ## ToDo
 
-Add initial images sprite
-Then add a few "themes" - css and image sprites
-Improve documentation
-Set initial rating - abstract a set_rating function from rating_clicked()
-Integrate with simple tooltip plugin once it's finished
-
-ReThink the "reset" functionality
-1. keep the cancel btn like it is now
-2. don't have a cancel btn, when clicking selected it resets
-3. add 1 and 2 as plugins
+* Add initial images sprite
+* Then add a few "themes" - css and image sprites
+* Improve documentation
+* Set initial rating - abstract a set_rating function from rating_clicked()
+* Integrate with simple tooltip plugin once it's finished
+* ReThink the "reset" functionality
+	1. keep the cancel btn like it is now
+	2. don't have a cancel btn, when clicking selected it resets
+	3. add 1 and 2 as plugins
