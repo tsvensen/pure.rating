@@ -1,0 +1,25 @@
+/**
+ * pure.rating : v.0.0.1
+ * Author & copyright (c) 2012: Tim Svensen
+ * Dual MIT & GPL license
+ */
+.rating-container { overflow: hidden; }
+
+.rating-item,
+.rating-btn-reset {
+  display: block;
+  float: left;
+  font-size: 2px;
+  text-decoration: none;
+  vertical-align: bottom;
+  background: transparent url(star.gif) no-repeat left -40px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.rating-item.rating-filled       { background-position: left   top; }
+.rating-item.rating-half-filled  { background-position: left -20px; }
+.rating-item.rating-hovered      { background-position: left -60px; }
+.rating-btn-reset                { background-position: left -80px; }
+.rating-btn-reset.rating-hovered { background-position: left -100px; }
