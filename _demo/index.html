@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>rating</title>
+
+  <link href="../css/pure.rating.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript">!window.jQuery && document.write(unescape("%3Cscript src='js/jquery-1.7.2.min.js' type='text/javascript'%3E%3C/script%3E"))</script>
+
+  <script src="../js/pure.rating.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+
+<h1>rate it</h1>
+  
+<select id="rating-widget-left" class="form-select" name="submitted[rating]">
+  <option selected="selected" value="">- None -</option><option value="1">Bad</option><option value="2">Ok</option><option value="3">Good</option><option value="4">Great</option><option value="5">Amazing!</option>
+</select>
+
+<br>
+
+<select id="rating-widget-right" class="form-select" name="submitted[rating]">
+  <option selected="selected" value="">- None -</option><option value="1">Bad</option><option value="2">Ok</option><option value="3">Good</option><option value="4">Great</option><option value="5">Amazing!</option>
+</select>
+
+<br>
+
+<select id="rating-widget-no-btn" class="form-select" name="submitted[rating]">
+  <option selected="selected" value="">- None -</option><option value="1">Bad</option><option value="2">Ok</option><option value="3">Good</option><option value="4">Great</option><option value="5">Amazing!</option>
+</select>
+
+<br>
+
+<select id="rating-widget-container-classes" class="form-select" name="submitted[rating]">
+  <option selected="selected" value="">- None -</option><option value="1">Bad</option><option value="2">Ok</option><option value="3">Good</option><option value="4">Great</option><option value="5">Amazing!</option>
+</select>
+
+<br>
+
+<select class="rating-widget-multiple form-select" name="submitted[rating]">
+  <option selected="selected" value="">- None -</option><option value="1">Bad</option><option value="2">Ok</option><option value="3">Good</option><option value="4">Great</option><option value="5">Amazing!</option>
+</select>
+<select class="rating-widget-multiple form-select" name="submitted[rating]">
+  <option selected="selected" value="">- None -</option><option value="1">Bad</option><option value="2">Ok</option><option value="3">Good</option><option value="4">Great</option><option value="5">Amazing!</option>
+</select>
+<select class="rating-widget-multiple form-select" name="submitted[rating]">
+  <option selected="selected" value="">- None -</option><option value="1">Bad</option><option value="2">Ok</option><option value="3">Good</option><option value="4">Great</option><option value="5">Amazing!</option>
+</select>
+
+
+
+<script type="text/javascript">
+  $('#rating-widget-left').rating();
+  $('#rating-widget-right').rating({resetBtnOpts: 'right'});
+  $('#rating-widget-no-btn').rating({resetBtnOpts: false});
+  $('#rating-widget-container-classes').rating({containerClasses: 'my-star-widget'});
+
+  $('.rating-widget-multiple').rating();
+
+
+  $(document).bind('ratingchange', function(e) {
+    console.log('ratingchanged', e.target);
+  });
+</script>
+
+
+</body>
+</html>
