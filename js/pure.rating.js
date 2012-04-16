@@ -15,11 +15,9 @@
  * rating
  */
 $.fn.rating = function(options) {
-  var variable = '',
-
       // build main options before element iteration
       // first arg is an empty object to keep from overwriting the defaults object
-      opts = $.extend({}, $.fn.rating.defaults, options),
+  var opts = $.extend({}, $.fn.rating.defaults, options),
 
       containerClasses = ' '+ opts.containerClasses, // add space so classes don't collide
       resetBtnOpts     = opts.resetBtnOpts,
