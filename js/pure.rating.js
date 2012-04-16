@@ -1,5 +1,5 @@
 /**
- * pure.rating : v.0.0.1
+ * pure.rating : v.0.1
  * Author & copyright (c) 2012: Tim Svensen
  * Dual MIT & GPL license
  *
