@@ -4,6 +4,8 @@ jQuery plugin that turns a single select element into a rating widget.
 
 A custom 'ratingchange' event is fired whenever the select is updated.
 
+Also, there is a backport of the plugin that works with jQuery 1.3.2+ in /_backport/.
+
 
 ## Plugin Options
 <pre>
