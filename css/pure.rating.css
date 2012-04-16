@@ -12,14 +12,14 @@
   font-size: 2px;
   text-decoration: none;
   vertical-align: bottom;
-  background: transparent url(star.gif) no-repeat left -40px;
-  width: 16px;
-  height: 16px;
+  background: transparent url(../images/icons_rating.png) no-repeat left -32px;
+  width: 15px;
+  height: 15px;
   cursor: pointer;
 }
 
 .rating-item.rating-filled       { background-position: left   top; }
-.rating-item.rating-half-filled  { background-position: left -20px; }
-.rating-item.rating-hovered      { background-position: left -60px; }
-.rating-btn-reset                { background-position: left -80px; }
-.rating-btn-reset.rating-hovered { background-position: left -100px; }
+.rating-item.rating-half-filled  { background-position: left -16px; }
+.rating-item.rating-hovered      { background-position: left -48px; }
+.rating-btn-reset                { background-position: left -64px; }
+.rating-btn-reset.rating-hovered { background-position: left -80px; }
